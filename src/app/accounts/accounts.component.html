@@ -1,0 +1,10 @@
+<div class="card mb-3" >
+  <h5 class="card-header text-danger">{{ account.name }}</h5>
+  <div class="card-body">
+    <p class="card-text">Server is '{{ account.status }}'</p>
+    Set Account status to
+<button class="btn-xs" (click)="onUpdateStatus(pos,'active')">Active</button> |
+<button class="btn-xs" (click)="onUpdateStatus(pos,'inactive')">InActive</button> |
+<button class="btn-xs" (click)="onUpdateStatus(pos,'unknown')">Unknown</button>
+  </div>
+</div>
